@@ -1,1 +1,1 @@
-# Smart_Fan
+# Toy Project
