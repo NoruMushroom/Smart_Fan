@@ -1,1 +1,1 @@
-# Toy Project
+# Smart Fan
