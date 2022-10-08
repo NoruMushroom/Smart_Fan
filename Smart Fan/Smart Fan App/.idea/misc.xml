@@ -4,6 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/kimminku98/AndroidStudioProjects/Smart_Fan/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/bg_appcolorwhite_radius.xml" value="0.366" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_seekbar_progress.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_seekbar_thumb.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/seekbar.xml" value="0.367" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/activity_main.xml" value="0.1875" />
       </map>
     </option>

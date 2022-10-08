@@ -16,22 +16,29 @@
         android:layout_marginTop="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"/>
-
+    <TextView
+        android:textSize="15sp"
+        android:text="연결된 기기 : 없음"
+        android:textColor="#8770b4"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/summer"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="40dp"
         android:weightSum="2">
-
         <TextView
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Bluetooth"
+            android:text="블루투스"
             android:fontFamily="@font/summer"
             android:textColor="#8770b4"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_weight="1"/>
         <Switch
             android:id="@+id/bluetooth_btn"
@@ -39,6 +46,59 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Auto_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="자동"
+            android:fontFamily="@font/summer"
+            android:textColor="#8770b4"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+        <Switch
+            android:id="@+id/auto_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Angle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/angle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/summer"
+            android:gravity="right"
+            android:text="90°"
+            android:textColor="#8770b4"
+            android:textSize="20sp" />
+        <SeekBar
+            android:id="@+id/angle_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="180"
+            android:progress="90"
+            android:thumb="@drawable/custom_seekbar_thumb"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:splitTrack="false"/>
     </LinearLayout>
 
 
