@@ -13,6 +13,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
 import android.widget.Switch;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//Title bar 없애기
         angle_seekbar = findViewById(R.id.angle_bar);
         angle_text = findViewById(R.id.angle);
         bluetooth_switch = findViewById(R.id.bluetooth_btn);
@@ -46,11 +48,9 @@ public class MainActivity extends AppCompatActivity {
         auto_switch.setChecked(false);//초기값은 off
         BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if(bluetoothAdapter == null){
-            Toast.makeText(this.getApplicationContext(),"블루투스 사용이 불가능 합니다.",Toast.LENGTH_SHORT).show();
             return;
         }
         else{
-            Toast.makeText(this.getApplicationContext(),"블루투스 사용이 가능합니다.",Toast.LENGTH_SHORT).show();
             if (!bluetoothAdapter.isEnabled()) {
                 Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                 startActivityForResult(enableBtIntent, 100);
