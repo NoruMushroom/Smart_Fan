@@ -45,7 +45,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:track="@drawable/custom_switch_track_selector"
+            android:thumb="@drawable/custom_switch_thumb"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/Auto_view"
@@ -67,7 +69,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:track="@drawable/custom_switch_track_selector"
+            android:thumb="@drawable/custom_switch_thumb"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/Angle_view"
