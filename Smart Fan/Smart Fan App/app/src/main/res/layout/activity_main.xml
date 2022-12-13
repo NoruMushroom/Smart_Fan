@@ -105,6 +105,61 @@
             android:layout_marginBottom="10dp"
             android:splitTrack="false"/>
     </LinearLayout>
-
-
+    <LinearLayout
+        android:id="@+id/Fan_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Fan_Speed"
+            android:orientation = "horizontal"
+            android:weightSum="4">
+        <RadioButton
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/High"
+            android:text = "강풍"
+            android:textSize="20sp"
+            android:fontFamily="@font/summer"
+            android:textColor="#8770b4"
+            android:buttonTint="#8770b4"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Middle"
+            android:text = "약풍"
+            android:textSize="20sp"
+            android:fontFamily="@font/summer"
+            android:textColor="#8770b4"
+            android:buttonTint="#8770b4"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Low"
+            android:text = "미풍"
+            android:textSize="20sp"
+            android:fontFamily="@font/summer"
+            android:textColor="#8770b4"
+            android:buttonTint="#8770b4"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Stop"
+            android:text = "정지"
+            android:textSize="20sp"
+            android:fontFamily="@font/summer"
+            android:textColor="#8770b4"
+            android:buttonTint="#8770b4"
+            android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
 </LinearLayout>

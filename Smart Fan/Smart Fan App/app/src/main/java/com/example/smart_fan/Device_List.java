@@ -11,6 +11,8 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCallback;
+import android.bluetooth.BluetoothGattCharacteristic;
+import android.bluetooth.BluetoothGattDescriptor;
 import android.bluetooth.BluetoothManager;
 import android.bluetooth.BluetoothProfile;
 import android.bluetooth.le.BluetoothLeScanner;
@@ -39,6 +41,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.Timer;
+import java.util.UUID;
 
 public class Device_List extends Dialog {
     Handler Handler = new Handler(Looper.getMainLooper());
@@ -46,8 +49,6 @@ public class Device_List extends Dialog {
     private BluetoothAdapter bluetoothAdapter;
     private ListView Device_Search;
     private Device_Adapter adapter;
-    private Device_Type item = new Device_Type();
-    private BluetoothGatt ble_gatt_;
     private boolean mScanning = true;
     Listener listener;
     public Device_List(Context context,Listener listener) {
@@ -66,8 +67,8 @@ public class Device_List extends Dialog {
             @SuppressLint("MissingPermission")
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getContext(),adapter.getItem(position).getName(),Toast.LENGTH_SHORT).show();
-                connectDevice(adapter.getItem(position).getDevice());
+                listener.Device_info(adapter.getItem(position).getDevice());
+                dismiss();
             }
         });
         adapter = new Device_Adapter();
@@ -93,56 +94,22 @@ public class Device_List extends Dialog {
     private BluetoothAdapter.LeScanCallback leScanCallback = new BluetoothAdapter.LeScanCallback() {
         public void onLeScan(final BluetoothDevice device, final int rssi, final byte[] scanRecord) {
             Handler.post(new Runnable() {
+                @SuppressLint("MissingPermission")
                 @Override
                 public void run() {
                     if(device.getName() != null){
                         adapter.addItem(device.getName(), device.getAddress(),device);
+                        adapter.notifyDataSetInvalidated();
                     }
                     Device_Search.setAdapter(adapter);
                 }
             });
         }
     };
-    private class GattClientCallback extends BluetoothGattCallback {
-        @SuppressLint("MissingPermission")
-        @Override
-        public void onConnectionStateChange(BluetoothGatt _gatt, int _status, int _new_state) {
-            super.onConnectionStateChange(_gatt, _status, _new_state);
-            if (_status == BluetoothGatt.GATT_FAILURE) {
-                Log.d( "실패", "Closing Gatt connection" );
-                disconnectGattServer();
-                return;
-            } else if (_status != BluetoothGatt.GATT_SUCCESS) {
-                Log.d( "실패", "Closing Gatt connection" );
-                disconnectGattServer();
-                return;
-            }
-            if (_new_state == BluetoothProfile.STATE_CONNECTED) {
-                // update the connection status message
-                // set the connection flag
-                Log.d("성공", "Connected to the GATT server");
-                listener.changeText(ble_gatt_.getDevice().getName());
-                dismiss();
-            } else if (_new_state == BluetoothProfile.STATE_DISCONNECTED) {
-                Log.d( "실패", "Closing Gatt connection" );
-                disconnectGattServer();
-            }
-        }
-    }
-    public void disconnectGattServer() {
-        Log.d( "종료", "Closing Gatt connection" );
-        // reset the connection flag
-        // disconnect and close the gatt
-        if( ble_gatt_ != null ) {
-            ble_gatt_.disconnect();
-            ble_gatt_.close();
-        }
-    }
-    @SuppressLint("MissingPermission")
-    private void connectDevice(BluetoothDevice _device ) {
-        // update the status
-        GattClientCallback gatt_client_cb= new GattClientCallback();
-        ble_gatt_= _device.connectGatt( getContext(), false, gatt_client_cb );
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        dismiss();
     }
 }
 
