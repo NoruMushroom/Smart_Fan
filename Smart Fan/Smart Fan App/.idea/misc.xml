@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kimminku98/AndroidStudioProjects/Smart_Fan/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/bg_appcolorwhite_radius.xml" value="0.366" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_seekbar_progress.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_seekbar_thumb.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_switch_thumb.xml" value="0.366" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_switch_track_off.xml" value="0.366" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_switch_track_on.xml" value="0.366" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_switch_track_selector.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_track_selector.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/seekbar.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/device_item.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/device_list.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/listitem_device.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/progressbar.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/progressbar_connect.xml" value="0.20104166666666667" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/progressbar_disconnect.xml" value="0.36614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
