@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/splash" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "스마트 선풍기"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/summer"
+        android:textStyle="bold"
+        android:textColor="#8770b4"/>
+</LinearLayout>

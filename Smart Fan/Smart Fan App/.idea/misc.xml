@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/kimminku98/AndroidStudioProjects/Smart_Fan/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable-v24/ic_custom_foreground.xml" value="0.367" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.367" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/bg_appcolorwhite_radius.xml" value="0.366" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_seekbar_progress.xml" value="0.367" />
@@ -13,6 +14,7 @@
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_switch_track_on.xml" value="0.366" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_switch_track_selector.xml" value="0.367" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/custom_track_selector.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/ic_custom_background.xml" value="0.367" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.367" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/drawable/seekbar.xml" value="0.367" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/activity_main.xml" value="0.1875" />
@@ -22,6 +24,10 @@
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/progressbar.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/progressbar_connect.xml" value="0.20104166666666667" />
         <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/progressbar_disconnect.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/layout/splash.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/mipmap-anydpi-v26/ic_custom.xml" value="0.367" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2075" />
+        <entry key="..\:/Users/kimminku98/Documents/GitHub/Toy_Project/Smart Fan/Smart Fan App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2075" />
       </map>
     </option>
   </component>
