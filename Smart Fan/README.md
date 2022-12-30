@@ -13,3 +13,5 @@
 <img src = https://user-images.githubusercontent.com/57284689/209558713-9e2cba65-2be2-4314-8bfa-765fc4817ca3.jpg>
 <h2> 7. Language&Tools</h2>
 <img src = https://user-images.githubusercontent.com/57284689/209558747-8e61cc90-8d86-4072-81b0-094c0627ff26.jpg>
+<h2> 8. 참고자료</h2>
+https://github.com/nettlep/gobbledegook
